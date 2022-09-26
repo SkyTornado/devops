@@ -1,7 +1,5 @@
-FROM nginx:alpine
-
-RUN apk add -U git curl
-
-EXPOSE 8090:80
+FROM python:3.8.5
+COPY server.py /server.py
+ENTRYPOINT ["python3","-u", "server.py"]
 
 LABEL maintainer="sidorushkin@gmail.com"
