@@ -1,7 +1,7 @@
 pipeline {
 agent {   dockerfile {
     dir '.'
-    filename './Docker/Dockerfile'
+    filename 'Dockerfile'
   } }
   stages {
     stage('Test toolchain') {
