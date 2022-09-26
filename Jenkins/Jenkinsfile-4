@@ -1,6 +1,6 @@
 pipeline {
   agent {   dockerfile {
-    dir '.'
+    HOME="."
     filename './Docker/Dockerfile'
   } }
   stages {
