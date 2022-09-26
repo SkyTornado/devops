@@ -1,8 +1,5 @@
 pipeline {
-agent {   dockerfile {
-    dir '.'
-    filename 'Dockerfile'
-  } }
+  agent { dockerfile true }
   stages {
     stage('Test toolchain') {
       steps {
